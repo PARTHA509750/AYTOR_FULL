@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aytor</title>
+    <!-- LINKS START HERE -->
+
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/slick.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
+
+    <!-- LINKS END HERE -->
+</head>
+<body>
+    
+    <!-- NAVBAR START HERE -->
+
+    <nav class="navbar navbar-expand-lg d-none d-lg-block customNavbar">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="./image/Logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Shop
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Shop-1</a></li>
+                  <li><a class="dropdown-item" href="#">Shop-2</a></li>                  
+                  <li><a class="dropdown-item" href="#">Shop-3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Pages-1</a></li>
+                  <li><a class="dropdown-item" href="#">Pages-2</a></li>
+                  <li><a class="dropdown-item" href="#">Pages-3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Features
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Features-1</a></li>
+                  <li><a class="dropdown-item" href="#">Features-2</a></li>
+                  <li><a class="dropdown-item" href="#">Features-3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Blogs
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Blogs-1</a></li>
+                  <li><a class="dropdown-item" href="#">Blogs-2</a></li>
+                  <li><a class="dropdown-item" href="#">Blogs-3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+              </li>
+            </ul>    
+          </div>
+
+          <div class="icons">
+            <ul>
+                <li><span><iconify-icon icon="la:search"></iconify-icon></span></li>
+                <li><a href="#"><iconify-icon icon="majesticons:user-line"></iconify-icon></a></li>
+                <li><a href="#"><iconify-icon icon="teenyicons:heart-outline"></iconify-icon></a></li>
+                <li>
+                  <a href="#">
+                    <iconify-icon icon="akar-icons:shopping-bag"></iconify-icon>
+                    <span class="purchaseNumber">
+                      0
+                    </span>
+                  </a>
+                </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- SM-NAVBAR START HERE -->
+
+    <div class="smNavbar d-lg-none py-3">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="menu col-2">
+            <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
+              <iconify-icon icon="mingcute:menu-fill"></iconify-icon>
+            </button>
+
+            <!-- SIDE BAR START -->
+            
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                <a href="#"><img src="./image/Logo.png" alt="#"></a>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body smMenu">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Shop</a></li>
+                  <li><a href="#">Pages</a></li>
+                  <li><a href="#">Features</a></li>
+                  <li><a href="#">Blogs</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>            
+          </div>
+          <!-- SIDE BAR END -->
+
+          <div class="logo text-center col-8">
+            <a href="#">
+              <img src="./image/Logo.png" alt="#" />
+            </a>
+          </div>
+          <div class="icons col-2">
+            <ul>
+                <li>
+                  <a href="#">
+                    <iconify-icon icon="akar-icons:shopping-bag"></iconify-icon>
+                    <span class="purchaseNumber">
+                      0
+                    </span>
+                  </a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SM-NAVBAR ENDS HERE -->
+
+    <!-- NAVBAR START HERE -->
+
+    <!-- BANNER START HERE -->
+
+    <section id="banner">
+
+      <div class="bannerSlider" style="background-image: url(./image/banner.png);">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="bannerCnt col-lg-5">
+              <h5>
+                Mega Sale
+              </h5>
+              <h2>
+                Up To 35% Off
+              </h2>
+              <p>
+                Objectively incubate enabled innovation through leveraged mindshare. Competently.
+              </p>
+              <a href="#">
+                Shop Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bannerSlider" style="background-image: url(./image/banner.png);">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="bannerCnt col-lg-5">
+              <h5>
+                Mega Sale
+              </h5>
+              <h2>
+                Up To 30% Off
+              </h2>
+              <p>
+                Objectively incubate enabled innovation through leveraged mindshare. Competently.
+              </p>
+              <a href="#">
+                Shop Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bannerSlider" style="background-image: url(./image/banner.png);">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="bannerCnt col-lg-5">
+              <h5>
+                Mega Sale
+              </h5>
+              <h2>
+                Up To 40% Off
+              </h2>
+              <p>
+                Objectively incubate enabled innovation through leveraged mindshare. Competently.
+              </p>
+              <a href="#">
+                Shop Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bannerSlider" style="background-image: url(./image/banner.png);">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+            <div class="bannerCnt col-lg-5">
+              <h5>
+                Mega Sale
+              </h5>
+              <h2>
+                Up To 45% Off
+              </h2>
+              <p>
+                Objectively incubate enabled innovation through leveraged mindshare. Competently.
+              </p>
+              <a href="#">
+                Shop Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- BANNER END HERE -->
+
+    <!-- FEATURED PRODUCT START HERE -->
+
+    <section id="featured">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-5">
+            <div class="category">
+              <img src="./image/category1.png" alt="#">
+              <div class="overLay row justify-content-center align-items-center mx-0">
+                <div class="overlayCnt text-center">
+                  <h2>
+                    Beauty Serum
+                  </h2>
+                  <a href="#">
+                    Shop Now
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="category mt-4">
+              <img src="./image/category2.png" alt="#">
+              <div class="overLay row justify-content-center align-items-center mx-0">
+                <div class="overlayCnt text-center">
+                  <h2>
+                    Glowing Serum
+                  </h2>
+                  <a href="#">
+                    Shop Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-7">
+            <div class="category">
+              <img src="./image/category3.png" alt="#">
+              <div class="overLay row justify-content-center align-items-center mx-0">
+                <div class="overlayCnt text-center">
+                  <h2>
+                    Harbal Soap
+                  </h2>
+                  <a href="#">
+                    Shop Now
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCT END HERE -->
+
+    <!-- New Arrivals Products START HERE -->
+
+    <section id="newArrivals">
+      <div class="container">
+        <h2>
+          New Arrivals Products
+        </h2>
+        <div class="productSlide">
+          <div class="productPart">
+            <div class="productImg">
+              <div class="label">
+                NEW
+              </div>
+              <img src="./image/product 1.png" alt="#">
+              <div class="overlay">
+                <ul>
+                  <li><a  data-bs-toggle="tooltip" data-bs-title="Add To Cart" data-bs-placement="left" href="#"><iconify-icon icon="ic:twotone-add-shopping-cart"></iconify-icon></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Add To Favorite" data-bs-placement="left" href="#"><iconify-icon icon="majesticons:heart"></iconify-icon></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Full Preview" data-bs-placement="left" href="#"><iconify-icon icon="mdi:eye"></iconify-icon></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Check Stock" data-bs-placement="left" href="#"><iconify-icon icon="mdi:signal"></iconify-icon></a></li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="productCnt">
+              <p>
+                $100.00
+              </p>
+              <h4>
+                Shower Gel
+              </h4>
+              <span>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+              </span>
+            </div>
+          </div>
+
+          <div class="productPart">
+            <div class="productImg">
+              <div class="label">
+                NEW
+              </div>
+              <img src="./image/product2.png" alt="#">
+              <div class="overlay">
+                <ul>
+                  <li><a  data-bs-toggle="tooltip" data-bs-title="Add To Cart" data-bs-placement="left" href="#"><iconify-icon icon="ic:twotone-add-shopping-cart"></iconify-icon></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Add To Favorite" data-bs-placement="left" href="#"><iconify-icon icon="majesticons:heart"></iconify-icon></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Full Preview" data-bs-placement="left" href="#"><iconify-icon icon="mdi:eye"></iconify-icon></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Check Stock" data-bs-placement="left" href="#"><iconify-icon icon="mdi:signal"></iconify-icon></a></li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="productCnt">
+              <p>
+                $30.00
+              </p>
+              <h4>
+                Face Wash
+              </h4>
+              <span>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+              </span>
+            </div>
+          </div>
+
+          <div class="productPart">
+            <div class="productImg">
+              <div class="label">
+                NEW
+              </div>
+              <img src="./image/product 3.png" alt="#">
+              <div class="overlay">
+                <ul>
+                  <li><a  data-bs-toggle="tooltip" data-bs-title="Add To Cart" data-bs-placement="left" href="#"><iconify-icon icon="ic:twotone-add-shopping-cart"></iconify-icon></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Add To Favorite" data-bs-placement="left" href="#"><iconify-icon icon="majesticons:heart"></iconify-icon></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Full Preview" data-bs-placement="left" href="#"><iconify-icon icon="mdi:eye"></iconify-icon></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Check Stock" data-bs-placement="left" href="#"><iconify-icon icon="mdi:signal"></iconify-icon></a></li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="productCnt">
+              <p>
+                $130.00
+              </p>
+              <h4>
+                Natural's
+              </h4>
+              <span>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+              </span>
+            </div>
+          </div>
+
+          <div class="productPart">
+            <div class="productImg">
+              <div class="label">
+                NEW
+              </div>
+              <img src="./image/product 4.png" alt="#">
+              <div class="overlay">
+                <ul>
+                  <li><a  data-bs-toggle="tooltip" data-bs-title="Add To Cart" data-bs-placement="left" href="#"><iconify-icon icon="ic:twotone-add-shopping-cart"></iconify-icon></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Add To Favorite" data-bs-placement="left" href="#"><iconify-icon icon="majesticons:heart"></iconify-icon></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Full Preview" data-bs-placement="left" href="#"><iconify-icon icon="mdi:eye"></iconify-icon></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Check Stock" data-bs-placement="left" href="#"><iconify-icon icon="mdi:signal"></iconify-icon></a></li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="productCnt">
+              <p>
+                $100.00
+              </p>
+              <h4>
+                Shower Gel
+              </h4>
+              <span>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+              </span>
+            </div>
+          </div>
+
+          <div class="productPart">
+            <div class="productImg">
+              <div class="label">
+                NEW
+              </div>
+              <img src="./image/product 1.png" alt="#">
+              <div class="overlay">
+                <ul>
+                  <li><a  data-bs-toggle="tooltip" data-bs-title="Add To Cart" data-bs-placement="left" href="#"><iconify-icon icon="ic:twotone-add-shopping-cart"></iconify-icon></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Add To Favorite" data-bs-placement="left" href="#"><iconify-icon icon="majesticons:heart"></iconify-icon></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Full Preview" data-bs-placement="left" href="#"><iconify-icon icon="mdi:eye"></iconify-icon></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Check Stock" data-bs-placement="left" href="#"><iconify-icon icon="mdi:signal"></iconify-icon></a></li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="productCnt">
+              <p>
+                $100.00
+              </p>
+              <h4>
+                Shower Gel
+              </h4>
+              <span>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+              </span>
+            </div>
+          </div>
+
+          <div class="productPart">
+            <div class="productImg">
+              <div class="label">
+                NEW
+              </div>
+              <img src="./image/product 1.png" alt="#">
+              <div class="overlay">
+                <ul>
+                  <li><a  data-bs-toggle="tooltip" data-bs-title="Add To Cart" data-bs-placement="left" href="#"><iconify-icon icon="ic:twotone-add-shopping-cart"></iconify-icon></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Add To Favorite" data-bs-placement="left" href="#"><iconify-icon icon="majesticons:heart"></iconify-icon></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Full Preview" data-bs-placement="left" href="#"><iconify-icon icon="mdi:eye"></iconify-icon></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Check Stock" data-bs-placement="left" href="#"><iconify-icon icon="mdi:signal"></iconify-icon></a></li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="productCnt">
+              <p>
+                $100.00
+              </p>
+              <h4>
+                Shower Gel
+              </h4>
+              <span>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+              </span>
+            </div>
+          </div>
+
+          <div class="productPart">
+            <div class="productImg">
+              <div class="label">
+                NEW
+              </div>
+              <img src="./image/product 1.png" alt="#">
+              <div class="overlay">
+                <ul>
+                  <li><a  data-bs-toggle="tooltip" data-bs-title="Add To Cart" data-bs-placement="left" href="#"><iconify-icon icon="ic:twotone-add-shopping-cart"></iconify-icon></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Add To Favorite" data-bs-placement="left" href="#"><iconify-icon icon="majesticons:heart"></iconify-icon></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Full Preview" data-bs-placement="left" href="#"><iconify-icon icon="mdi:eye"></iconify-icon></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Check Stock" data-bs-placement="left" href="#"><iconify-icon icon="mdi:signal"></iconify-icon></a></li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="productCnt">
+              <p>
+                $100.00
+              </p>
+              <h4>
+                Shower Gel
+              </h4>
+              <span>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+              </span>
+            </div>
+          </div>
+
+          <div class="productPart">
+            <div class="productImg">
+              <div class="label">
+                NEW
+              </div>
+              <img src="./image/product 1.png" alt="#">
+              <div class="overlay">
+                <ul>
+                  <li><a  data-bs-toggle="tooltip" data-bs-title="Add To Cart" data-bs-placement="left" href="#"><iconify-icon icon="ic:twotone-add-shopping-cart"></iconify-icon></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Add To Favorite" data-bs-placement="left" href="#"><iconify-icon icon="majesticons:heart"></iconify-icon></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Full Preview" data-bs-placement="left" href="#"><iconify-icon icon="mdi:eye"></iconify-icon></a></li>
+                  <li><a data-bs-toggle="tooltip" data-bs-title="Check Stock" data-bs-placement="left" href="#"><iconify-icon icon="mdi:signal"></iconify-icon></a></li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="productCnt">
+              <p>
+                $100.00
+              </p>
+              <h4>
+                Shower Gel
+              </h4>
+              <span>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+                <iconify-icon icon="iconamoon:star-fill"></iconify-icon>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- New Arrivals Products END HERE -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./app/jQuery.js"></script>
+    <script src="./app/bootstrap.bundle.min.js"></script> 
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js">    </script>
+    <script src="./app/slick.min.js"></script>
+    <script src="./app/app.js"></script>
+</body>
+</html>
